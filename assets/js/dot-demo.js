@@ -26,3 +26,8 @@
   // Set default
   setActive(nodes[0]);
 })();
+
+wrap.animate(
+  [{ transform: "scale(1)" }, { transform: "scale(1.01)" }, { transform: "scale(1)" }],
+  { duration: 180, easing: "ease-out" }
+);
