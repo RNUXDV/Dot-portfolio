@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DOT — Flagship Project</title>
+  <meta name="description" content="DOT explores finite interaction models as an alternative to infinite scroll." />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <!-- JS -->
+  <script src="../assets/js/dot-demo.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">DOT</h1>
+      <p class="tagline">
+        An exploration of interface structure, cognitive load, and intentional interaction.
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>Why DOT</h2>
+      <p>
+        DOT is a conceptual interface designed to interrupt infinite scroll behavior
+        and replace it with finite, spatial interaction.
+      </p>
+    </section>
+
+    <!-- DEMO -->
+    <section class="demo">
+      <h2>Interactive Demo</h2>
+
+      <div class="dot-demo-wrap">
+        <div class="orbit">
+          <button class="node active">Center</button>
+          <button class="node">Music</button>
+          <button class="node">Ideas</button>
+          <button class="node">People</button>
+          <button class="node">Explore</button>
+        </div>
+
+        <p class="demo-status">
+          Active node: <span id="activeNode">Center</span>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Robert Newman</p>
+  </footer>
+</body>
+</html>

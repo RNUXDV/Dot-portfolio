@@ -1,0 +1,131 @@
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #0b0b12;
+  color: #eaeaf0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 900px;
+  padding: 32px 20px;
+  margin: 0 auto;
+}
+
+/* ===== Header ===== */
+.site-header {
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.02);
+}
+
+.logo {
+  margin: 0;
+  font-size: 40px;
+  letter-spacing: 0.5px;
+}
+
+.tagline {
+  margin-top: 8px;
+  max-width: 560px;
+  color: rgba(234,234,240,0.8);
+}
+
+/* ===== Sections ===== */
+.intro {
+  margin-top: 48px;
+}
+
+.demo {
+  margin-top: 72px;
+}
+
+/* ===== Demo ===== */
+.dot-demo-wrap {
+  margin-top: 24px;
+  padding: 32px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Orbit layout */
+.orbit {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  margin: 0 auto 24px;
+}
+
+.node {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.06);
+  color: #eaeaf0;
+  cursor: pointer;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.node:hover {
+  transform: scale(1.05);
+}
+
+.node.active {
+  background: rgba(160,210,255,0.25);
+  border-color: rgba(160,210,255,0.6);
+}
+
+/* Position nodes */
+.node:nth-child(1) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.node:nth-child(2) {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.node:nth-child(3) {
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.node:nth-child(4) {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.node:nth-child(5) {
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.demo-status {
+  text-align: center;
+  color: rgba(234,234,240,0.85);
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  margin-top: 80px;
+  padding: 24px;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(234,234,240,0.6);
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
