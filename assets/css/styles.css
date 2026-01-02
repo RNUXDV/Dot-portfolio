@@ -125,6 +125,25 @@ html, body {
 }
 
 /* ===== Sections ===== */
+.principles {
+  margin-top: 48px;
+}
+
+.principles-list {
+  margin: 16px 0 0;
+  padding-left: 18px;
+  max-width: 70ch;
+}
+
+.principles-list li {
+  margin: 10px 0;
+  color: rgba(234, 234, 240, 0.9);
+}
+
+.principles-list strong {
+  color: rgba(234, 234, 240, 1);
+}
+
 .intro {
   margin-top: 48px;
 }
